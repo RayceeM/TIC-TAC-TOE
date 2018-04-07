@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tictactoe.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:scaleType="center"
+        android:src="@drawable/logo2"
+        android:id="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnsingle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="#d32f2f"
+        android:paddingBottom="30dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="30dp"
+        android:textStyle="bold"
+        android:text="SINGLE PLAYER" />
+
+    <Button
+        android:id="@+id/btnmultiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnsingle"
+        android:layout_alignRight="@+id/btnsingle"
+        android:layout_below="@+id/btnsingle"
+        android:layout_marginTop="11dp"
+        android:background="#d32f2f"
+        android:paddingBottom="30dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="30dp"
+        android:textStyle="bold"
+        android:text="MULTIPLAYERS" />
+
+
+</RelativeLayout>
