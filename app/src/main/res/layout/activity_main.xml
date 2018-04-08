@@ -30,7 +30,8 @@
         android:paddingRight="50dp"
         android:paddingTop="30dp"
         android:textStyle="bold"
-        android:text="SINGLE PLAYER" />
+        android:text="SINGLE PLAYER"
+        android:onClick="single"/>
 
     <Button
         android:id="@+id/btnmultiple"
