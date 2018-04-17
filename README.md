@@ -10,7 +10,5 @@ User is able to see the scoreboard
 
 User is able to increase the size of the board from 3 to 5
 
-User is able to play alone
-
 User is able to play against another human player
 
