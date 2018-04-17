@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Singleplayer"></activity>
+        <activity android:name=".Singleplayer" />
+        <activity android:name=".singlethree" />
+        <activity android:name=".multiplayer" />
+        <activity android:name=".multiThree"></activity>
     </application>
 
 </manifest>
