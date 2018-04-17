@@ -18,35 +18,20 @@
         android:id="@+id/imageView" />
 
     <Button
-        android:id="@+id/btnsingle"
+        android:id="@+id/btnmultiple"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="43dp"
         android:background="#d32f2f"
+        android:onClick="multi"
         android:paddingBottom="30dp"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
         android:paddingTop="30dp"
-        android:textStyle="bold"
-        android:text="SINGLE PLAYER" />
-
-    <Button
-        android:id="@+id/btnmultiple"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/btnsingle"
-        android:layout_alignRight="@+id/btnsingle"
-        android:layout_below="@+id/btnsingle"
-        android:layout_marginTop="11dp"
-        android:background="#d32f2f"
-        android:paddingBottom="30dp"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp"
-        android:paddingTop="30dp"
-        android:textStyle="bold"
-        android:text="MULTIPLAYERS" />
+        android:text="START GAME"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
