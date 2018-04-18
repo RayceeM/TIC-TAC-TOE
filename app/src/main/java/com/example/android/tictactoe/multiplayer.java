@@ -31,6 +31,7 @@ p2=(EditText)findViewById(R.id.p2);
             Intent i = new Intent(multiplayer.this, multiThree.class);
             startActivity(i);
         }
+
         else if(v==mfive)
         {
             String plone=p1.getText().toString();

@@ -202,8 +202,8 @@ tPlayer2.setText(pl2);
         resetBoard();
     }
     private void  updatePointsText(){
-        textViewPlayer1.setText(player1Points);
-        textViewPlayer2.setText(player2Points);
+        textViewPlayer1.setText("Score:" + player1Points);
+        textViewPlayer2.setText("Score:" + player2Points);
     }
 
     private void resetBoard(){

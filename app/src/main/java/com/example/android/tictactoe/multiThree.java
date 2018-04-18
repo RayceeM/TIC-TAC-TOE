@@ -27,7 +27,7 @@ public class multiThree extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity_multi_three);
 
         textViewPlayer1 = findViewById(R.id.pl1);
-        textViewPlayer2 = findViewById(R.id.txtPlayer2);
+        textViewPlayer2 = findViewById(R.id.pl2);
 
       for(int i = 0 ; i<3;i++){
           for (int j =0;j<3;j++){
@@ -130,8 +130,8 @@ public class multiThree extends AppCompatActivity implements View.OnClickListene
        resetBoard();
     }
     private void  updatePointsText(){
-        textViewPlayer1.setText("Player 1: " + player1Points);
-        textViewPlayer2.setText("Player 2: " + player2Points);
+        textViewPlayer1.setText("Score: " + player1Points);
+        textViewPlayer2.setText("Score: " + player2Points);
     }
 
     private void resetBoard(){
