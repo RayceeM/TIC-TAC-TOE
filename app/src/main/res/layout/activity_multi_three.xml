@@ -7,7 +7,7 @@
     tools:context="com.example.android.tictactoe.multiThree">
 
     <TextView
-        android:id="@+id/txtPlayer1"
+        android:id="@+id/pl1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/board"
@@ -15,34 +15,58 @@
         android:layout_alignStart="@+id/board"
         android:layout_marginTop="18dp"
         android:padding="8dp"
-        android:text="PLAYER 1:0"
+        android:text="@string/player1"
         android:textColor="#424242"
         android:textSize="20sp"
         android:textStyle="bold"
         android:freezesText="true"/>
 
     <TextView
-        android:id="@+id/txtPlayer2"
+        android:id="@+id/pl2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtPlayer1"
-        android:layout_alignBottom="@+id/txtPlayer1"
+        android:layout_alignBaseline="@+id/pl1"
+        android:layout_alignBottom="@+id/pl1"
         android:layout_alignEnd="@+id/board"
         android:layout_alignRight="@+id/board"
         android:padding="8dp"
-        android:text="PLAYER 2:0"
+        android:text="@string/player2"
         android:textColor="#424242"
         android:textSize="20sp"
         android:textStyle="bold"
         android:freezesText="true"/>
 
+    <TextView
+        android:id="@+id/score1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pl1"
+        android:layout_alignRight="@+id/pl1"
+        android:layout_below="@+id/pl1"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        android:text="@string/score" />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pl2"
+        android:layout_alignStart="@+id/pl2"
+        android:layout_below="@+id/pl1"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:text="@string/score"
+        android:textStyle="bold" />
 
     <TableLayout
         android:id="@+id/board"
-        android:layout_below="@+id/txtPlayer1"
+        android:layout_below="@+id/pl1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
         android:rowCount="3"
         android:columnCount="3"
         android:padding="8dp" >
@@ -180,6 +204,6 @@
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:text="RESET" />
+        android:text="@string/reset" />
 
 </RelativeLayout>

@@ -26,7 +26,7 @@ public class multiThree extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multi_three);
 
-        textViewPlayer1 = findViewById(R.id.txtPlayer1);
+        textViewPlayer1 = findViewById(R.id.pl1);
         textViewPlayer2 = findViewById(R.id.txtPlayer2);
 
       for(int i = 0 ; i<3;i++){
@@ -110,9 +110,9 @@ public class multiThree extends AppCompatActivity implements View.OnClickListene
        }
        return false;
    }
-   private void player1Wins() {
+   private void player1Wins( ) {
        player1Points++;
-       Toast.makeText(this,"Player 1 wins!",Toast.LENGTH_SHORT).show();
+       Toast.makeText(this," Player 1 wins!",Toast.LENGTH_SHORT).show();
        updatePointsText();
        resetBoard();
    }

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tictactoe.multiFive">
+
+    <TextView
+        android:id="@+id/pl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/board"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/board"
+        android:layout_marginTop="12dp"
+        android:freezesText="true"
+        android:padding="8dp"
+        android:text="@string/player1"
+        android:textColor="#424242"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pl1"
+        android:layout_alignBottom="@+id/pl1"
+        android:layout_alignEnd="@+id/board"
+        android:layout_alignRight="@+id/board"
+        android:layout_marginBottom="10dp"
+        android:freezesText="true"
+        android:padding="8dp"
+        android:text="@string/player2"
+        android:textColor="#424242"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/score1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pl1"
+        android:layout_alignRight="@+id/pl1"
+        android:layout_below="@+id/pl1"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        android:text="@string/score" />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pl2"
+        android:layout_alignStart="@+id/pl2"
+        android:layout_below="@+id/pl1"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:text="@string/score"
+        android:textStyle="bold" />
+
+
+    <TableLayout
+        android:id="@+id/board"
+        android:layout_below="@+id/pl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:rowCount="5"
+        android:columnCount="5"
+        android:padding="8dp" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/b_00"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="#d32f2f"
+                android:freezesText="true"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/b_01"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_02"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_03"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_04"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/b_10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_11"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_12"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+
+            <Button
+                android:id="@+id/b_13"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+
+            <Button
+                android:id="@+id/b_14"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/b_20"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_21"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_22"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_23"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_24"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/b_30"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_31"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_32"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_33"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_34"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/b_40"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_41"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_42"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_43"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/b_44"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="#d32f2f"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                android:freezesText="true"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnResetx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/board"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="#212121"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="@string/reset"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
