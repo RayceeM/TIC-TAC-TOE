@@ -17,8 +17,8 @@ public class multiThree extends AppCompatActivity implements View.OnClickListene
     private int player1Points;
     private int player2Points;
 
-    private TextView textViewPlayer1;
-    private TextView textViewPlayer2;
+    TextView textViewPlayer1,textViewPlayer2;
+    TextView tPlayer1,tPlayer2;
 
 
     @Override
@@ -26,8 +26,14 @@ public class multiThree extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multi_three);
 
-        textViewPlayer1 = findViewById(R.id.pl1);
-        textViewPlayer2 = findViewById(R.id.pl2);
+        tPlayer1 = findViewById(R.id.pl1);
+        tPlayer2 = findViewById(R.id.pl2);
+        textViewPlayer1 = findViewById(R.id.score1);
+        textViewPlayer2 = findViewById(R.id.score2);
+        String pl1=multiThree.this.getIntent().getExtras().getString("player_1");
+        String pl2=multiThree.this.getIntent().getExtras().getString("player_2");
+        tPlayer1.setText(pl1);
+        tPlayer2.setText(pl2);
 
       for(int i = 0 ; i<3;i++){
           for (int j =0;j<3;j++){

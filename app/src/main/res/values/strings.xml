@@ -8,6 +8,6 @@
     <string name="text3">THREE BY THREE</string>
     <string name="text4">FIVE BY FIVE</string>
     <string name="hint">Name</string>
-    <string name="score">SCORE 0</string>
+    <string name="score">SCORE:0</string>
 
 </resources>

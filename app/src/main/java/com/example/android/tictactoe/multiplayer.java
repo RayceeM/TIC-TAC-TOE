@@ -28,8 +28,19 @@ p2=(EditText)findViewById(R.id.p2);
     public void onClick(View v) {
         if(v==mthree)
         {
-            Intent i = new Intent(multiplayer.this, multiThree.class);
-            startActivity(i);
+
+            String plone=p1.getText().toString();
+            String pltwo=p2.getText().toString();
+            if(plone.equals("")|| pltwo.equals(""))
+            {
+                Toast.makeText(this, "Enter player names!", Toast.LENGTH_LONG).show();
+            }
+            else {
+                Intent i = new Intent(multiplayer.this, multiThree.class);
+                i.putExtra("player_1", plone);
+                i.putExtra("player_2", pltwo);
+                startActivity(i);
+            }
         }
 
         else if(v==mfive)
